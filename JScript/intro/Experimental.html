@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <form>
-        <div><input type="number" name="" id="year" min="1900" max="2023"></div>
-        <div><input type="submit" value="Надіслати" onclick="myYear()"></div>
+    <form onsubmit="myYear(); return false;">
+        <div><input type="number" name="name" id="year" min="1900" max="2047"></div>
+        <div><input type="submit" value="Надіслати"></div>
     </form>
 
-    <div><p id="output">Введи бля рік</p></div>
+    <div><p id="output">Введи рік</p></div>
 
     <script src="intro.js"></script>
 </body>
